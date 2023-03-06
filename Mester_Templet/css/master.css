@@ -1,0 +1,503 @@
+:root{
+    --main-color:#ff9800;
+}
+
+body{
+    font-family: 'open sans',sans-serif;
+}
+
+.container{
+   width: 1170px;
+   padding-left:15px;
+   padding-right: 15px;
+   margin: auto; 
+}
+
+/*Start Settings Box*/
+.settings-box{
+position: fixed;
+left: -200px;
+top: 0;
+background-color:#fff;
+width: 200px;
+z-index: 1000;
+min-height: 100vh;
+transition: .3s;
+}
+.settings-box.open{
+    left: 0px;
+}
+
+.settings-box .toggle-settings{
+position: absolute;
+right: -30px;
+top: 100px;
+background-color:#fff;
+text-align: center;
+cursor: pointer;
+
+}
+.settings-box .toggle-settings .fa-gear{
+    width: 30px;
+    padding: 8px 0;
+}
+
+/*End Settings Box*/
+
+/* Start Nav Bullets*/
+.nav-bullets{
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px; 
+    z-index: 1000;
+}
+.nav-bullets .bullet{
+    width: 20px;
+    height: 20px;
+    border: 3px solid var(--main-color);
+    margin: 10px auto;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+.nav-bullets .bullet .tooltip {
+    background-color: var(--main-color);
+    width: 100px;
+    color: #fff;
+    padding: 4px 10px;
+    position: absolute;
+    right: 40px;
+    top: -7;
+
+}
+
+/* End Nav Bullets*/
+
+
+
+
+
+/*start landing page*/
+.landing-page{
+    min-height: 100vh;
+    background-image: url(../images/complete-real-estate-brokerage-software-lone-wolf-technologies.png);
+    background-size:cover ; 
+    position: relative;
+}
+.landing-page .overlay {
+    background-color: rgba(0,0,0, .6);
+    position : absolute;
+    width : 100%;
+    height : 100%;
+    left : 0;
+    top : 0;
+    z-index : 1;
+}
+
+.header-area{
+      
+position: relative;
+z-index: 1;
+color:#fff;
+display: flex;
+padding: 10px;
+
+}
+
+.header-area .logo {
+    width: 300px;
+    padding: 15px;
+    font-weight: bold;
+}
+.header-area .links {
+    list-style:none ;
+    width: 100%;
+    text-align: right;
+    padding-left: 0;
+    padding-right: 20px ;
+    font-size: 15px;
+}
+
+.header-area .links  li {
+    display: inline-block;
+    margin-left: 10px;
+    
+}
+
+.header-area .links  li a {
+    color:#fff;
+    text-decoration:salmon;
+    transition: .2s;
+}
+.header-area .links  li a:hover,
+.header-area .links  li a.active{
+    color: var(--main-color);
+} 
+
+.introduction-text{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    color:#fff;
+    text-align: center;
+}
+
+.introduction-text h1{
+    font-size: 34px;
+    margin: 0 0 12px;
+
+}
+.introduction-text h1 span {
+    color:var(--main-color)
+
+}
+.introduction-text p{
+    line-height: 1.6;
+    font-size: 20px;
+    margin: 0;
+
+}
+ 
+/*End landing page*/
+
+/*start About us page*/ 
+.about-us{
+padding-top:50px;
+padding-bottom:50px;
+display: flex;
+}
+
+.about-us .info-box{
+flex: 1;
+padding: 30px;
+}
+
+.about-us .info-box h2{
+font-weight: bold;
+font-size: 30px;
+color: var(--main-color);
+margin: 0 0 10px;
+}
+
+.about-us .info-box p{
+line-height: 1.8;
+color: #767676;
+margin: 0;
+
+}
+.about-us .images-box { 
+flex: 1;
+text-align: center;
+}
+
+.about-us .images-box img{
+width: 250px;
+
+}
+/*End About us page*/
+
+/*Start skills*/
+.skills{
+    padding-top:50px ;
+    padding-bottom: 50px;
+    background-color: #EEE; 
+}
+.skills h2{ 
+    font-size: bold;
+    font-size: 30px;
+    color: var(--main-color);
+    margin: 0 0 50px;
+    text-align: center;
+}
+.skills .skill-box{
+    background-color: #fff;
+    display: flex;
+    padding: 15px;
+    margin-bottom: 15px;
+
+}
+
+.skills .skill-box .skill-name{
+    font-weight: bold;
+    width: 140px;
+    text-align: center;
+    line-height: 30px; 
+}
+
+.skills .skill-box .skill-progress{
+    height: 30px;
+    width: 100%;
+    background-color: #f6f6f6;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+}
+.skills .skill-box .skill-progress span{
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background-color: var(--main-color);
+transition: all .5s;
+}
+
+/*End skills*/
+ 
+/*Start Time Line*/
+.timeline {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #EEE;
+}
+.timeline .timeline-content{
+    position: relative;
+    overflow: hidden;
+}
+.timeline .timeline-content:before{
+    content: '';
+    width: 2px;
+    height: 100%;
+    background-color: var(--main-color);
+    position: absolute;
+    left: 50%;
+    margin-left:-1px ;
+    top: 0;   
+}
+ .timeline .timeline-content .year{
+    margin: 20px auto;
+    width: 50px;
+    background-color: var(--main-color);
+    position: relative;
+    z-index: 2;
+    border-radius: 4px;
+    text-align: center;
+    color: #fff;
+    padding: 2px 5px;
+    font-weight: bold;
+ }
+
+.timeline .timeline-content .left,
+.timeline .timeline-content .right{
+  width: calc(50% - 25px);
+  margin-bottom:40px;
+  position: relative;
+}
+
+.timeline .timeline-content .left{
+    float: left;
+
+}
+.timeline .timeline-content .left:before{
+    right: -35px;
+}
+
+.timeline .timeline-content .right{
+    float: right;
+}
+
+.timeline .timeline-content .right:before{
+    left: -35px;
+}
+
+.timeline .timeline-content .left:before,
+.timeline .timeline-content .right:before{
+    content: '';
+    width: 14px;
+    height: 14px;
+    background-color: #fff;
+    border: 3px solid var(--main-color);
+    position: absolute;
+    border-radius:50%;
+    top: 20px;
+}
+
+
+.timeline .timeline-content .content{
+    padding: 20px;
+    background-color: #fff;
+
+}
+.timeline .timeline-content .content h3{
+    font-weight: bold;
+    color: var(--main-color);
+    margin: 0 0 10px;
+}
+.timeline .timeline-content .content p{
+    color: #666;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.clearfix{
+    clear: both;
+}
+
+
+
+.timeline .timeline-content .left .content:before{
+    content: '';
+    border-style:solid;
+    border-width:10px;
+    border-color:transparent transparent transparent  #fff;
+    height: 0;
+    width: 0;
+    position: absolute;
+    right: -20px;
+    top: 20px;
+}
+
+
+.timeline .timeline-content .right .content:before{
+    content: '';
+    border-style:solid;
+    border-width:10px;
+    border-color:transparent #fff transparent transparent;
+    height: 0;
+    width: 0;
+    position: absolute;
+    left: -20px;
+    top: 20px;
+}
+/*End Time Line*/
+
+/*Start Featurs*/
+.features{
+    padding-top:80px;
+    padding-bottom: 80px;
+}
+
+.features h2{
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--main-color);
+    margin: 0 0 60px;
+    text-align: center;
+}
+
+.features .feat-box{
+    width: calc(98% / 3);
+    float: left;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.features .feat-box img{
+    
+    width: 96px;
+    
+}
+
+.features .feat-box h4{
+font-size: 22px;
+margin: 15px 0 40px;
+position: relative;
+}
+
+.features .feat-box h4:before{
+content: '';
+width: 40px;
+height: 4px;
+background-color: var(--main-color);
+position: absolute;
+left: 50%;
+margin-left:-20px ;
+bottom: -22px;
+}
+
+.features.feat-box p{
+width: 80%;
+margin: 0 auto;
+line-height: 1.7;
+color: #767676;
+}
+
+/*End Featurs*/
+
+/*start testestimonials*/
+.testimonials{
+position: relative;
+padding-top: 80px;
+padding-bottom: 80px;
+}
+
+.testimonials:before{
+    content: '';
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--main-color);
+    height: 100%;
+}
+
+.testimonials:after{
+    content: '';
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #333;
+    height: 100%;
+}
+
+
+.testimonials h2{
+   font-weight: bold;
+   font-size: 30px; 
+   color: #fff;
+   margin: 0 0 30px;
+   text-align: left;
+   position: relative;
+   z-index: 2;
+}
+.testimonials .ts-box{
+   position: relative;
+   z-index: 2; 
+   width: calc(98% / 4);
+   float: left;
+   background-color: #fff;
+   padding: 20px;
+   font-size: 22px;
+}
+
+.testimonials .ts-box:not(:last-of-type){
+    margin-right: 1%;
+}
+
+.testimonials .ts-box > p{
+    margin: 0 0 20px;
+    line-height: 1.5;
+    font-size: 18px;
+    color: #707070;
+    font-style: italic;
+}
+
+.testimonials .ts-box .person-info{
+    overflow: hidden;
+}
+
+.testimonials .ts-box .person-info img{
+    float: left;
+    box-sizing: 0%;
+    margin-right: 0px;
+    width: 150px;
+}
+
+.testimonials .ts-box .person-info h4{
+    margin: 14px 0 5px;
+
+}
+.testimonials .ts-box .person-info p{
+    color: #707070;
+    margin: 0;
+
+}
+
+
+
+/*End testestimonials*/
